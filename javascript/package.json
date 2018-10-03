@@ -1,0 +1,24 @@
+{
+  "name": "multi-step-example",
+  "version": "1.0.0",
+  "description": "An example of cucumber-js working with multiple sets of step definitions",
+  "main": "index.js",
+  "scripts": {
+    "api-test": "./node_modules/.bin/cucumber-js -r features/api_step_defs",
+    "ui-test": "./node_modules/.bin/cucumber-js -r features/ui_step_defs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hindsightsoftware/multi-glue-code-example.git"
+  },
+  "author": "Mark Winteringham",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/hindsightsoftware/multi-glue-code-example/issues"
+  },
+  "homepage": "https://github.com/hindsightsoftware/multi-glue-code-example#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.0.1"
+  }
+}
