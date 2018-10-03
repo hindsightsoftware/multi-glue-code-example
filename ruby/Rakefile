@@ -1,0 +1,11 @@
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:api_steps) do |t|
+    t.cucumber_opts = "-r features/api_step_defs"
+end
+
+Cucumber::Rake::Task.new(:ui_steps) do |t|
+    t.cucumber_opts = "-r features/ui_step_defs"
+end
